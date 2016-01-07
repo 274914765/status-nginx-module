@@ -1,0 +1,36 @@
+ngx_addon_name=ngx_http_status_module
+
+HTTP_MODULES="$HTTP_MODULES ngx_http_status_module"
+
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS \
+                $ngx_addon_dir/src/json-c-0.12/arraylist.c \
+                $ngx_addon_dir/src/json-c-0.12/debug.c \
+                $ngx_addon_dir/src/json-c-0.12/json_c_version.c \
+                $ngx_addon_dir/src/json-c-0.12/json_object.c \
+                $ngx_addon_dir/src/json-c-0.12/json_object_iterator.c \
+                $ngx_addon_dir/src/json-c-0.12/json_tokener.c \
+                $ngx_addon_dir/src/json-c-0.12/json_util.c \
+                $ngx_addon_dir/src/json-c-0.12/linkhash.c \
+                $ngx_addon_dir/src/json-c-0.12/printbuf.c \
+                $ngx_addon_dir/src/json-c-0.12/random_seed.c \
+                $ngx_addon_dir/src/ngx_http_status_module.c \
+                "
+
+NGX_ADDON_DEPS="$NGX_ADDON_DEPS \
+                $ngx_addon_dir/src/json-c-0.12/arraylist.h \
+                $ngx_addon_dir/src/json-c-0.12/bits.h \
+                $ngx_addon_dir/src/json-c-0.12/debug.h \
+                $ngx_addon_dir/src/json-c-0.12/json.h \
+                $ngx_addon_dir/src/json-c-0.12/json_config.h \
+                $ngx_addon_dir/src/json-c-0.12/json_c_version.h \
+                $ngx_addon_dir/src/json-c-0.12/json_inttypes.h \
+                $ngx_addon_dir/src/json-c-0.12/json_object.h \
+                $ngx_addon_dir/src/json-c-0.12/json_object_iterator.h \
+                $ngx_addon_dir/src/json-c-0.12/json_object_private.h \
+                $ngx_addon_dir/src/json-c-0.12/json_tokener.h \
+                $ngx_addon_dir/src/json-c-0.12/json_util.h \
+                $ngx_addon_dir/src/json-c-0.12/linkhash.h \
+                $ngx_addon_dir/src/json-c-0.12/printbuf.h \
+                $ngx_addon_dir/src/json-c-0.12/random_seed.h \
+                "
+
